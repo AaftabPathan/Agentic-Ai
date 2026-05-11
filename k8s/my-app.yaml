@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app-container
+        image: python:3.9-slim
+        command: ["python", "-c"]
+        args:
+        - |
+          import time
+          print('MY APP — Running Successfully!')
+          while True:
+            print('[OK] Healthy and serving...')
+            time.sleep(10)
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
