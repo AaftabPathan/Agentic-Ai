@@ -143,6 +143,7 @@ kubectl delete pod -l app=my-app
 • Auto refresh every 10 seconds
 • Real-time timestamps
 
+---
 ## 📧 Email Alerts
 
 ## System sends emails for:
@@ -150,8 +151,8 @@ kubectl delete pod -l app=my-app
 🚨 Incident detected
 ✅ Incident resolved
 ⚠️ Manual intervention required
-
-
+---
+---
 ## 🧠 AI Behavior
 
 ## AI works in 3 phases:
@@ -162,7 +163,7 @@ cluster state read
 logs + reasoning via LLM
 3. Act
 kubectl commands execute
-
+---
 
 ## 🧪 Example Workflow:
 Pod crashes →
@@ -172,13 +173,13 @@ Fix YAML applied →
 Pod restored →
 Email sent →
 Dashboard updated
-
+---
 ## ⚠️ Important Notes:
 ➡ Minikube must be running
 ➡ Ollama server must be active
 ➡ kubectl configured properly
 ➡ Gmail app password required
-
+---
 ## 🔥 Troubleshooting:-
 ## ❌ kubectl not found
 Install kubectl and restart terminal
@@ -189,7 +190,7 @@ ollama serve
 ## ❌ Email not sending
 check .env
 use app password not normal password
-
+---
 
 ## 👨‍💻 Author
 Aaftab Pathan  
@@ -204,9 +205,9 @@ Grafana dashboards
 Predictive scaling (ML model)
 Multi-cluster support
 SaaS deployment version
-
+---
 ## ⭐ Project Highlight
 This project demonstrates a real-world **AI-driven self-healing DevOps system**, capable of autonomous infrastructure management with zero manual intervention.
-
+---
 ## ⭐ Star this repo if you like it
 “AI is not replacing DevOps engineers — it is upgrading them.”
